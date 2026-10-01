@@ -1,0 +1,20 @@
+Upload index.html AND the assets folder from this package to your repository root using the smaller + beside Go to file -> Upload files -> Commit changes. Existing styles.css, favicon and CV files stay in place. The new assets/gallery folder contains 35 photos organised into 14 events. Photo dates follow the supplied filenames, including August 2026 for that Glasgow Science Festival group. The CV download has not been updated.
+
+Add photos later: upload them into assets/gallery; copy an existing <figure> in the gallery section and change its image URL, alt text and figcaption. To add an event, copy an <article class="event">. Gallery uses native expandable photo groups and image links, with no JavaScript dependency.
+
+Source checks: Oxford confirms Abhirup Banerjee (not Bannerjee), Robin Choudhury (not Chodhury), and Vicente Grau. Aarhus confirms Emil Nielsen Holck, Lene Andreasen and Evald Høj Christiansen. Twente confirms Robert H. Geelkerken and Maaike Koenrades. Politecnico di Torino confirms Claudio Chiastra (Associate Professor) and Dario Carbonaro; Politecnico di Milano lists Giulia Luraghi as Associate Professor and Francesco Migliavacca as Professor. MGM uses K. R. Balakrishnan, so that official display name is used. Terumo confirms the Vascutek trading name. No Terumo staff profiles were found for both contacts; Robbie Brodie and Craig Maclean follow published research author names (capitalisation varies between sources). Names are recorded as collaborators, without asserting present employment for Terumo individuals.
+
+Verification sources:
+https://coroscience.au.dk/about
+https://eng.ox.ac.uk/people/abhirup-banerjee
+https://eng.ox.ac.uk/people/vicente-grau-colomer
+https://www.medsci.ox.ac.uk/study/graduateschool/supervisors/robin-choudhury
+https://www.polito.it/personale?p=051315
+https://www.polito.it/personale?p=046517
+https://people.utwente.nl/r.h.geelkerken
+https://www.utwente.nl/en/news/2020/11/880075/maaike-koenrades-wins-overijssel-phd-award
+https://www.cmic.polimi.it/en/persone/docenti-e-ricercatori/luraghi-giulia/
+https://www.cmic.polimi.it/ricerca/elenco-gruppi-di-ricerca/labs-insilicomed/
+https://mgmhealthcare.in/all_doctor/dr-k-r-balakrishnan/
+https://terumoaortic.com/about-terumo-aortic/patents/
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12454525/
