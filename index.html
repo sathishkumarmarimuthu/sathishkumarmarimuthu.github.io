@@ -928,16 +928,26 @@
       photos: sequence("Glasgow_Science_Festival_2026_August_img", [1, 2, 3])
     },
     {
-      title: "Academic visit to Politecnico di Torino, Italy & Aarhus University Hospital, Denmark",
+      title: "Academic visits — Politecnico di Torino, Italy & Aarhus University Hospital, Denmark",
       date: "September 2025",
       caption: "Academic exchange during a month-long visit.",
-      photos: sequence("torino-aarhus-academic-visit-sep-2025-1month_img", [1, 2, 3, 4, 5, 6])
+      photos: sequence(
+        "torino-aarhus-academic-visit-sep-2025-1month_img",
+        [1, 2, 3, 4, 5, 6]
+      ),
+      originalNames: true,
+      folder: "assets/"
     },
     {
-      title: "Outreach event at Morrison's Academy School, UK",
+      title: "School outreach — Morrison’s Academy, UK",
       date: "May 2025",
-      caption: "Outreach activities at a school.",
-      photos: sequence("Outreach_Events_Morrisons_Acdemy_School_may_2025_img", [0, 1, 2, 3, 4, 5, 6])
+      caption: "School outreach activities at Morrison’s Academy.",
+      photos: sequence(
+        "Outreach_Events_Morrisons_Acdemy_School_may_2025_img",
+        [0, 1, 2, 3, 4, 5, 6]
+      ),
+      originalNames: true,
+      folder: "assets/"
     },
     {
       title: "BioMedEng25 outreach",
@@ -1012,7 +1022,12 @@
     const slug = name.toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "");
-    const url = "assets/gallery/" + slug + ".jpg";
+    const filename = event.originalNames
+    ? name + ".jpg"
+    : slug + ".jpg";
+  
+  const folder = event.folder || "assets/gallery/";
+  const url = folder + encodeURIComponent(filename);
 
     let caption = event.caption;
     if (name.includes("oral_presentation")) {
